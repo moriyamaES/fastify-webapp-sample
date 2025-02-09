@@ -31,6 +31,7 @@ server.register(postgres, {
 
 const passport = await authConfig(server)
 
+
 // Routes
 server.register(loginRoutes, { passport })
 server.register(itemRoutes, { passport })
