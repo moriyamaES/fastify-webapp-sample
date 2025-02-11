@@ -10,6 +10,7 @@ setCommonPlugins();
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
   tests: "./tests/**/*_test.js",
+  tests2: "./tests/**/order_test.js",
   output: './output',
   helpers: {
     Playwright: {

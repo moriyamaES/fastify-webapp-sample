@@ -2,7 +2,7 @@ module.exports = {
   shouldBeOnOrderCompletePage(fn) {
 		const I = actor({});
 		I.seeCurrentUrlEquals("/order");
-		I.seeInTitle ("ご注文が完了しました")
+		I.seeInTitle ("ご注文が完了しました");
 		fn(I);
 	},
 	
