@@ -12,32 +12,6 @@ Before(({I}) => {
 	
 Scenario("ユーザーは、名前と電話番号、受け取り予定時間を入力して、商品を注文できる。", 
 ({ I, utils}) => {
-  // I.amAnonimousUser((I) => {
-  //   I.amOnPage("/items");
-  //   I.shouldBeOnItemListPage((I) => {
-  //       I.shouldBeOnItemListPage((I) => {
-  //       I.fillField(I.locateWithinItem(itemName).カートに入れる数量, "10");
-  //       I.click(I.locateWithinItem(itemName).カートに入れる);
-  //     });
-  //   });
-  // });
-
-  // I.click("カートを見る");
-  
-  // I.shouldBeOnOrderPage((I) => {
-  //   I.fillField("お名前（受取時に必要です）", "ユーザー1");
-  //   I.fillField("電話番号（連絡時に必要です）", "090-0000-0000");
-  //   I.fillField("受け取り日", utils.now.format("YYYY/MM/DD"));
-  //   I.fillField("受け取り目安時間",
-  //     utils.now.add(1, "hour").format("HH:mmA")
-  //   );
-  //   I.click("注文を確定する");
-  // })
-  
-  // I.shouldBeOnOrderCompletePage((I) => {
-  //   I.see("ご注文が完了しました");
-  // });
-
   I.amAnonimousUser((I) => {
     I.amOnPage("/items");
     I.shouldBeOnItemListPage((I) => {
